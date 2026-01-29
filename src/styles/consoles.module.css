@@ -103,7 +103,7 @@
   100% { transform: translateX(100%); }
 }
 
-/* ================= RESPONSIVO ================= */
+/* ======== RESPONSIVO ======== */
 
 @media (max-width: 1024px) {
   .consoleSection {

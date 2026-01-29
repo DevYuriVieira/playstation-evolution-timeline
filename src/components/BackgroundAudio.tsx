@@ -10,7 +10,7 @@ export default function BackgroundAudio() {
 
     // Delay para garantir que o áudio está pronto
     const timer = setTimeout(() => {
-      audio.volume = 0.25; // 25% volume
+      audio.volume = 0.25; 
       audio.play().catch((error) => {
         console.log("Autoplay bloqueado. Clique na página para tocar.", error);
         

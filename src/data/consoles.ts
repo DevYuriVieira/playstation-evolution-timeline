@@ -4,13 +4,13 @@ export interface ConsoleData {
   id: string;
   name: string;
   year: number;
-  sales: number; // milhões
+  sales: number; 
   image: string;
   description: string;
   background: string;
   themeColor: string;
   era: Era;
-  imageSize?: number; // Optional: tamanho máximo em px (padrão 550px)
+  imageSize?: number; 
   specs: {
     cpu: string;
     gpu: string;
