@@ -1,0 +1,158 @@
+.footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000 100%);
+  border-top: 1px solid rgba(0, 165, 255, 0.2);
+  padding: 20px 20px;
+  margin-top: 60px;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.stack {
+  font-size: 0.7rem;
+  color: #00aaff;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.65rem;
+  color: #888;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #333;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.githubLink:hover {
+  background: #1f1f1f;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.linkedinLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0, 119, 181, 0.2);
+  color: #0077b5;
+  transition: all 0.3s ease;
+  border: 1px solid #0077b5;
+}
+
+.linkedinLink:hover {
+  background: #0077b5;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 16px 15px;
+    margin-top: 40px;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+  }
+
+  .stack {
+    font-size: 0.65rem;
+    margin-bottom: 3px;
+  }
+
+  .description {
+    font-size: 0.6rem;
+    margin-bottom: 8px;
+  }
+
+  .socialLinks {
+    gap: 12px;
+  }
+
+  .githubLink,
+  .linkedinLink {
+    width: 32px;
+    height: 32px;
+  }
+
+  .githubLink svg,
+  .linkedinLink svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 10px;
+    margin-top: 30px;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+    margin-bottom: 3px;
+  }
+
+  .stack {
+    font-size: 0.6rem;
+    margin-bottom: 2px;
+  }
+
+  .description {
+    font-size: 0.55rem;
+    margin-bottom: 8px;
+  }
+
+  .socialLinks {
+    gap: 10px;
+  }
+
+  .githubLink,
+  .linkedinLink {
+    width: 32px;
+    height: 32px;
+  }
+
+  .githubLink svg,
+  .linkedinLink svg {
+    width: 16px;
+    height: 16px;
+  }
+}

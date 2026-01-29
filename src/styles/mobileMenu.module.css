@@ -1,0 +1,183 @@
+.floatingButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0047ff, #00aaff);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 998;
+  box-shadow: 0 4px 15px rgba(0, 165, 255, 0.4);
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.floatingButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 165, 255, 0.6);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 997;
+  display: flex;
+  align-items: flex-end;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu {
+  width: 100%;
+  background: linear-gradient(180deg, #001f5c 0%, #000 100%);
+  padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: slideMenuUp 0.3s ease;
+}
+
+@keyframes slideMenuUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menuItem {
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(0, 165, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.menuItem:hover {
+  background: rgba(0, 165, 255, 0.1);
+  color: #00aaff;
+  padding-left: 30px;
+}
+
+.close {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: rgba(0, 165, 255, 0.2);
+  color: #00aaff;
+  border: 1px solid #00aaff;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background: rgba(0, 165, 255, 0.3);
+  color: #fff;
+}
+
+/* Mostrar menu flutuante em tablets e mobile */
+@media (max-width: 1024px) {
+  .floatingButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .floatingButton {
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu {
+    padding: 25px 15px;
+  }
+
+  .menuItem {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .close {
+    padding: 12px;
+    font-size: 0.95rem;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .floatingButton {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .menu {
+    padding: 20px 12px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .menuItem {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .close {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .floatingButton {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .menu {
+    padding: 15px 10px;
+  }
+
+  .menuItem {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .close {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}

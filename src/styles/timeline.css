@@ -1,0 +1,107 @@
+.timeline {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.timeline-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 8px 4px;
+  border-radius: 4px;
+}
+
+.timeline-link:hover {
+  opacity: 1;
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.1);
+  transform: rotate(180deg) translateX(-8px);
+  letter-spacing: 1px;
+}
+
+/* Estado ativo - seção visível no centro */
+.timeline-link.active {
+  opacity: 1;
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.15);
+  font-weight: 600;
+  transform: rotate(180deg) translateX(-8px);
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 8px rgba(0, 102, 255, 0.2);
+}
+
+/* Mostrar nomes abreviados por padrão */
+.short-name {
+  display: inline;
+}
+
+.full-name {
+  display: none;
+}
+
+/* Desktop grande - tamanho normal */
+@media (max-width: 1440px) {
+  .timeline {
+    left: 15px;
+    gap: 10px;
+  }
+
+  .timeline-link {
+    font-size: 0.75rem;
+  }
+}
+
+/* Tablet - reduzir tamanho */
+@media (max-width: 1024px) {
+  .timeline {
+    left: 10px;
+    gap: 8px;
+  }
+
+  .timeline-link {
+    font-size: 0.65rem;
+  }
+}
+
+/* Mobile - mostrar nomes completos */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .timeline {
+    display: none;
+  }
+
+  /* Se a timeline ficar visível em mobile, mostrar nome completo */
+  .short-name {
+    display: none;
+  }
+
+  .full-name {
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    display: none;
+  }
+}

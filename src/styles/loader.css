@@ -1,0 +1,22 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.loader.hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.loader h1 {
+  font-size: 3rem;
+  color: #0047ff;
+  text-shadow: 0 0 20px #0047ff;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
