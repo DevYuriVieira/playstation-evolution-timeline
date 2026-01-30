@@ -1,16 +1,26 @@
+import ps1Img from "../assets/Consoles/PS1.png";
+import ps2Img from "../assets/Consoles/PS2.png";
+import pspImg from "../assets/Consoles/PSP.png";
+import ps3Img from "../assets/Consoles/PS3.png";
+import psvitaImg from "../assets/Consoles/PSvita.png";
+import ps4Img from "../assets/Consoles/PS4.png";
+import ps4proImg from "../assets/Consoles/PS4pro.webp";
+import ps5Img from "../assets/Consoles/PS5.png";
+import ps5proImg from "../assets/Consoles/PS5pro.webp";
+
 export type Era = "retro" | "modern" | "future";
 
 export interface ConsoleData {
   id: string;
   name: string;
   year: number;
-  sales: number; 
+  sales: number;
   image: string;
   description: string;
   background: string;
   themeColor: string;
   era: Era;
-  imageSize?: number; 
+  imageSize?: number;
   specs: {
     cpu: string;
     gpu: string;
@@ -21,8 +31,6 @@ export interface ConsoleData {
 }
 
 export const consoles: ConsoleData[] = [
-
-  // 🎮 1994 — PS1 (Retro)
   {
     id: "ps1",
     name: "PlayStation",
@@ -30,8 +38,7 @@ export const consoles: ConsoleData[] = [
     sales: 102,
     description:
       "Sony's groundbreaking first console revolutionized gaming forever with its advanced 3D graphics capabilities and CD-ROM technology. It became a cultural phenomenon with legendary franchises like Final Fantasy, Metal Gear Solid, and Resident Evil.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/95/PSX-Console-wController.png",
+    image: ps1Img,
     themeColor: "#bfbfbf",
     background: "radial-gradient(circle at center, #222 0%, #000 70%)",
     era: "retro",
@@ -42,8 +49,6 @@ export const consoles: ConsoleData[] = [
       media: "CD-ROM",
     },
   },
-
-  // 🎮 2000 — PS2 (Retro)
   {
     id: "ps2",
     name: "PlayStation 2",
@@ -51,8 +56,7 @@ export const consoles: ConsoleData[] = [
     sales: 155,
     description:
       "The best-selling console of all time, the PS2 dominated the gaming industry with DVD support, stunning graphics, and an unparalleled game library including GTA, Metal Gear Solid, and Kingdom Hearts.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/5/58/PS2-Fat-Console-Set.png",
+    image: ps2Img,
     imageSize: 420,
     themeColor: "#0047ff",
     background: "radial-gradient(circle at center, #001f5c 0%, #000 70%)",
@@ -64,8 +68,6 @@ export const consoles: ConsoleData[] = [
       media: "DVD-ROM",
     },
   },
-
-  // 🎮 2004 — PSP (Retro Portable)
   {
     id: "psp",
     name: "PlayStation Portable",
@@ -73,8 +75,7 @@ export const consoles: ConsoleData[] = [
     sales: 80,
     description:
       "Brought console-level gaming to your pocket with its brilliant screen, dual analog sticks, and impressive multimedia capabilities including movies, photos, and games via UMD.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d6/PSP-3000-Model.png",
+    image: pspImg,
     themeColor: "#999999",
     background: "radial-gradient(circle at center, #222 0%, #000 70%)",
     era: "retro",
@@ -85,8 +86,6 @@ export const consoles: ConsoleData[] = [
       media: "UMD",
     },
   },
-
-  // 🎮 2006 — PS3 (Modern início HD)
   {
     id: "ps3",
     name: "PlayStation 3",
@@ -94,8 +93,7 @@ export const consoles: ConsoleData[] = [
     sales: 87,
     description:
       "Introduced groundbreaking Blu-ray technology and the powerful Cell processor. Defined HD gaming with online multiplayer, free PSN service, and iconic franchises like Uncharted, The Last of Us, and God of War.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/91/Ps3-fat-console.png",
+    image: ps3Img,
     imageSize: 330,
     themeColor: "#ffffff",
     background: "radial-gradient(circle at center, #111 0%, #000 70%)",
@@ -107,8 +105,6 @@ export const consoles: ConsoleData[] = [
       media: "Blu-ray",
     },
   },
-
-  // 🎮 2011 — PS Vita (Modern Portable)
   {
     id: "psvita",
     name: "PlayStation Vita",
@@ -116,8 +112,7 @@ export const consoles: ConsoleData[] = [
     sales: 15,
     description:
       "A powerful handheld featuring an OLED touchscreen, dual analog sticks, and rear touch panel. Delivered console-quality AAA games like Uncharted: Golden Abyss and Persona 4 Golden on the go.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e0/PlayStation-Vita-1101-FL.png",
+    image: psvitaImg,
     themeColor: "#0055ff",
     background: "radial-gradient(circle at center, #001f5c 0%, #000 70%)",
     era: "modern",
@@ -128,8 +123,6 @@ export const consoles: ConsoleData[] = [
       media: "Game Cards",
     },
   },
-
-  // 🎮 2013 — PS4
   {
     id: "ps4",
     name: "PlayStation 4",
@@ -137,8 +130,7 @@ export const consoles: ConsoleData[] = [
     sales: 117,
     description:
       "\"For the Players\" – a console built with developers in mind. Known for its incredible game library, cross-platform play, and social features that revolutionized how gamers connect and share experiences.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8c/PS4-Console-wDS4.png",
+    image: ps4Img,
     themeColor: "#1f6fff",
     background: "radial-gradient(circle at center, #002a7a 0%, #000 70%)",
     era: "modern",
@@ -149,8 +141,6 @@ export const consoles: ConsoleData[] = [
       storage: "500GB / 1TB HDD",
     },
   },
-
-  // 🎮 2016 — PS4 Pro
   {
     id: "ps4pro",
     name: "PlayStation 4 Pro",
@@ -158,8 +148,7 @@ export const consoles: ConsoleData[] = [
     sales: 14,
     description:
       "Unlocked 4K gaming potential with enhanced GPU power, providing 4K resolution support and significantly improved performance for premium gaming experiences on modern HDR displays.",
-    image:
-      "https://gmedia.playstation.com/is/image/SIEPDC/ps4-pro-product-thumbnail-01-en-14sep21?$facebook$",
+    image: ps4proImg,
     themeColor: "#003791",
     background: "radial-gradient(circle at center, #001a4d 0%, #000 70%)",
     era: "modern",
@@ -170,8 +159,6 @@ export const consoles: ConsoleData[] = [
       storage: "1TB HDD",
     },
   },
-
-  // 🎮 2020 — PS5
   {
     id: "ps5",
     name: "PlayStation 5",
@@ -179,8 +166,7 @@ export const consoles: ConsoleData[] = [
     sales: 50,
     description:
       "A generational leap forward with an ultra-fast custom SSD, advanced ray tracing capabilities, and haptic feedback in the DualSense controller. Redefines immersion with next-gen gaming at 4K 60-120fps.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/1/1b/PlayStation_5_and_DualSense_with_transparent_background.png",
+    image: ps5Img,
     imageSize: 450,
     themeColor: "#00aaff",
     background: "radial-gradient(circle at center, #001f5c 0%, #000 70%)",
@@ -192,8 +178,6 @@ export const consoles: ConsoleData[] = [
       storage: "825GB SSD",
     },
   },
-
-  // 🚀 2024 — PS5 Pro 
   {
     id: "ps5pro",
     name: "PlayStation 5 Pro",
@@ -201,8 +185,7 @@ export const consoles: ConsoleData[] = [
     sales: 5,
     description:
       "The peak of current-generation gaming. Enhanced GPU power drives superior ray tracing quality, increased resolution scaling, and higher frame rates. A masterclass in performance optimization and gaming evolution.",
-    image:
-      "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-dualsense-image-block-01-en-16aug24?$facebook$",
+    image: ps5proImg,
     themeColor: "#00e5ff",
     background:
       "radial-gradient(circle at center, #001d3d 0%, #000814 40%, #000 80%)",
@@ -215,6 +198,5 @@ export const consoles: ConsoleData[] = [
     },
   },
 ];
-
 
 
