@@ -11,7 +11,7 @@ export default function HeroIntro() {
         className="hero-logo-container"
       >
         <img 
-          src="https://pngimg.com/d/sony_playstation_PNG17532.png" 
+          src="/src/assets/logo/PS_Logo.png" 
           alt="PlayStation Logo"
           className="hero-logo"
         />
