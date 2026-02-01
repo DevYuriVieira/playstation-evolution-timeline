@@ -90,7 +90,6 @@ This approach eliminates layout thrashing and unnecessary re-renders.
 src/
 ├── assets/
 │   ├── consoles/
-│   ├── logo/
 │   └── audio/
 │
 ├── components/
@@ -334,7 +333,6 @@ Mudança de estado precisa quando a seção cruza o centro da tela
 src/
 ├── assets/
 │   ├── consoles/
-│   ├── logo/
 │   └── audio/
 │
 ├── components/
