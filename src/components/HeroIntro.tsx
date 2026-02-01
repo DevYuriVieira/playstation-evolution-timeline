@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import "../styles/hero.css";
-import psLogo from "../assets/logo/PS_Logo.png"; 
 
 export default function HeroIntro() {
   return (
@@ -11,8 +10,8 @@ export default function HeroIntro() {
         transition={{ duration: 1 }}
         className="hero-logo-container"
       >
-        <img 
-          src={psLogo} 
+        <img
+          src="/PS_Logo.png"
           alt="PlayStation Logo"
           className="hero-logo"
         />
